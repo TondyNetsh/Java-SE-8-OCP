@@ -1,0 +1,19 @@
+Assume that all bundles mentioned in the answers exist and define the same keys. Which
+one will be used to find the key in line 8?
+6: Locale.setDefault(new Locale("en", "US"));
+7: ResourceBundle b = ResourceBundle.getBundle("Dolphins");
+8: b.getString("name");
+A. Dolphins.properties
+B. Dolphins_en.java
+C. Dolphins_en.properties
+D. Whales.properties
+Review Questions 277
+E. Whales_en_US.properties
+F. The code does not compile.
+
+================================================================================================
+
+B. Java will first look for the most specific matches it can find, starting with Dolphins_en_
+US.java and then Dolphins_en_US.properties. Since neither is found, it drops the country and looks
+for Dolphins_en.java. Since a match is found, there is no reason to go on to the next one, which
+is Dolphins_en.properties.

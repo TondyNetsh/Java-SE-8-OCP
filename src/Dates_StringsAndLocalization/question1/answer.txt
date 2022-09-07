@@ -1,0 +1,14 @@
+Which of the following creates valid locales, assuming that the language and country codes
+follow standard conventions? (Choose all that apply.)
+A. new Locale("hi");
+B. new Locale("hi", "IN");
+C. new Locale("IN");
+D. new Locale("IN", "hi");
+E. Locale.create("hi");
+F. Locale.create("IN");
+
+=============================================================================================
+
+A, B. Choices E and F are incorrect because a Locale is created using a constructor. The
+convention is to use lowercase for a language code and uppercase for a country code. The
+language is mandatory when using a constructor, which makes choices A and B correct.

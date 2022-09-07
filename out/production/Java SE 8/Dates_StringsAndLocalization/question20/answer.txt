@@ -1,0 +1,10 @@
+Which of the following objects could contain the information “eastern standard time”?
+(Choose all that apply.)
+A. Instant
+B. LocalDate
+C. LocalDateTime
+D. LocalTime
+E. ZonedDateTime
+=======================================================================================
+E. Local______ explicitly excludes time zones. Instant represents a point in time, but
+always uses GMT rather than the desired time zone.
